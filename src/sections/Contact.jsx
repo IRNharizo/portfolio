@@ -57,7 +57,7 @@ function Contact({ lang }) {
 
             {/* Download CV based on current language */}
             <a
-              href={lang === 'fr' ? '/IR_FR.pdf' : '/IR_EN.pdf'}
+              href={`${import.meta.env.BASE_URL}${lang === 'fr' ? 'IR_FR.pdf' : 'IR_EN.pdf'}`}
               className="btn cv"
               download
               target="_blank"
@@ -65,8 +65,8 @@ function Contact({ lang }) {
             >
               {t.downloadCV}
             </a>
-
           </div>
+
         </div>
       </motion.div>
     </section>
