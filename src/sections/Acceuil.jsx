@@ -25,7 +25,7 @@ function Acceuil({ lang }) {
         <h2>{t.homeTitle}</h2>
 
         {/* Profile picture */}
-        <img src="/IR.jpeg" alt="Photo de profil" className="profile-pic" />
+        <img src={`${import.meta.env.BASE_URL}IR.jpeg`} alt="Photo de profil" className="profile-pic" />
 
         {/* Subtitle */}
         <p className="subtitle">{t.homeSubtitle}</p>
