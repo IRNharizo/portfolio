@@ -1,0 +1,51 @@
+/* Main About section container */
+.about {
+  /* Outer spacing and centered layout */
+  padding: 6rem 2rem;
+  background-color: #ffffff;
+  color: #2c3e50;
+  text-align: left;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* Section title */
+.about h2 {
+  font-size: 2.2rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  color: #1f2937;
+}
+
+/* Inner content card */
+.about-content {
+  /* Light background card with rounded corners */
+  background: #f3f4f6;
+  padding: 2rem 2rem;
+  border-radius: 12px;
+
+  /* Soft shadow for depth */
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+
+  text-align: left;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* Paragraph styling inside About section */
+.about-content p {
+  font-size: 1.1rem;
+  margin-bottom: 1.2rem;
+  line-height: 1.7;
+
+  /* Align icon and text on the same row */
+  display: flex;
+  align-items: flex-start;
+}
+
+/* Icon displayed before each paragraph */
+.about-content .icon {
+  margin-right: 0.8rem;
+  font-size: 1.3rem;
+  line-height: 1.5;
+}

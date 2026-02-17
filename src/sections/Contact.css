@@ -1,0 +1,115 @@
+/* Contact section container */
+.contact {
+  padding: 4rem 1.5rem;
+  background-color: #f3f4f6;
+  color: #2c3e50;
+  text-align: center;
+}
+
+/* Contact section title */
+.contact h2 {
+  font-size: 2.2rem;
+  margin-bottom: 1.5rem;
+  color: #1f2937;
+}
+
+/* Two-column layout for contact info and CV download */
+.contact-columns {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 2rem;
+  align-items: flex-start;
+}
+
+/* Individual contact cards */
+.contact-links,
+.cv-download {
+  flex: 1 1 auto;
+  max-width: 400px;
+  padding: 1.2rem;
+
+  /* Card appearance */
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.05);
+
+  text-align: center;
+  width: fit-content;
+}
+
+/* Paragraph text inside contact cards */
+.contact p {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+}
+
+/* Contact links (email, LinkedIn, etc.) */
+.contact a {
+  color: #3b82f6;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Hover effect for links */
+.contact a:hover {
+  text-decoration: underline;
+  color: #2563eb;
+}
+
+/* CV download button */
+.btn.cv {
+  background-color: #10b981;
+  color: white;
+  font-weight: 600;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  display: inline-block;
+  transition: background-color 0.3s ease;
+  margin-top: 1rem;
+}
+
+/* Hover effect on CV button */
+.btn.cv:hover {
+  background-color: #059669;
+}
+
+/* ---------------- RESPONSIVE (mobile & tablet) ---------------- */
+@media (max-width: 768px) {
+
+  /* Stack columns vertically on small screens */
+  .contact-columns {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* Full-width CV button on mobile */
+  .btn.cv {
+    width: 80%;
+    max-width: 300px;
+  }
+
+  /* Adjust card width and padding */
+  .contact-links,
+  .cv-download {
+    width: auto;
+    max-width: 90%;
+    padding: 1rem;
+  }
+
+  /* Reduce section padding on mobile */
+  .contact {
+    padding: 2rem 1rem;
+  }
+
+  /* Smaller heading on mobile */
+  .contact h2 {
+    font-size: 1.8rem;
+  }
+
+  /* Smaller paragraph text on mobile */
+  .contact p {
+    font-size: 1rem;
+  }
+}

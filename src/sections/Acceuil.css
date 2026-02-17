@@ -1,0 +1,68 @@
+/* Home / Landing section container */
+.acceuil {
+  /* Vertical spacing and centered content */
+  padding: 6rem 2rem;
+  background: #f9fafb;
+  text-align: center;
+}
+
+/* Main heading */
+.acceuil h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+/* Subtitle below main heading */
+.subtitle {
+  font-size: 1.2rem;
+  color: #4b5563;
+  margin-top: 0.75rem;
+}
+
+/* Introductory paragraph */
+.intro {
+  font-size: 1.05rem;
+  color: #374151;
+
+  /* Limit text width for better readability */
+  max-width: 720px;
+
+  /* Center block and control vertical spacing */
+  margin: 0.75rem auto 1.5rem auto;
+  line-height: 1.7;
+}
+
+/* Circular profile image */
+.profile-pic {
+  width: 160px;
+  height: 160px;
+
+  /* Make image perfectly round */
+  border-radius: 50%;
+
+  /* Ensure image keeps aspect ratio */
+  object-fit: cover;
+
+  margin: 1.5rem auto;
+  display: block;
+
+  /* Soft shadow for depth */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* ---------------- DARK MODE ---------------- */
+
+/* Improve heading contrast in dark mode */
+.App.dark .acceuil h2 {
+  color: #f9fafb;
+}
+
+/* Subtitle color adjustment for dark mode */
+.App.dark .acceuil .subtitle {
+  color: #cbd5e1;
+}
+
+/* Intro text color adjustment for dark mode */
+.App.dark .acceuil .intro {
+  color: #94a3b8;
+}

@@ -1,0 +1,178 @@
+/* --- GLOBAL BASE STYLES --- */
+
+body {
+  margin: 0;
+  padding: 0;
+
+  /* Main application font */
+  font-family: 'Inter', sans-serif;
+
+  /* Light gradient background for the whole app */
+  background: linear-gradient(135deg, #f0f4f8, #dbeafe);
+
+  color: #1f2937;
+
+  /* Smooth scrolling between sections */
+  scroll-behavior: smooth;
+}
+
+/* Main content wrapper (offset for fixed navbar) */
+main {
+  margin-top: 25px;
+  /* Adjust based on actual navbar height */
+}
+
+/* Reset default link styles */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Reset default list styles */
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Base section layout */
+section {
+  padding: 6rem 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* Global heading styles */
+h1,
+h2,
+h3 {
+  font-weight: 700;
+  color: #0f172a;
+}
+
+/* Section titles */
+h2 {
+  font-size: 2.2rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+/* Global paragraph styling */
+p {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  margin-bottom: 1rem;
+}
+
+/* --- SECTION CONTAINERS --- */
+
+/* Shared card-like container for sections */
+.section {
+  margin-bottom: 4rem;
+  background-color: #ffffff;
+  border-radius: 12px;
+
+  /* Soft shadow for depth */
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+
+  padding: 2rem 2rem;
+}
+
+/* --- BUTTONS --- */
+
+/* Primary button */
+.btn {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  background-color: #3b82f6;
+  color: #ffffff;
+  font-weight: 600;
+  border-radius: 8px;
+
+  /* Smooth hover transition */
+  transition: background-color 0.3s ease;
+
+  margin-top: 1.5rem;
+}
+
+/* Button hover effect */
+.btn:hover {
+  background-color: #2563eb;
+}
+
+/* --- RESPONSIVE --- */
+
+@media (max-width: 768px) {
+
+  /* Smaller headings on mobile */
+  h2 {
+    font-size: 1.8rem;
+  }
+
+  /* Reduce padding on sections */
+  .section {
+    padding: 3rem 1.2rem;
+  }
+
+  /* Wider buttons on mobile */
+  .btn {
+    width: 40%;
+  }
+}
+
+/* -------- DARK MODE -------- */
+
+.App.dark {
+
+  /* Global dark background gradient */
+  background: radial-gradient(
+    1200px 600px at 50% -200px,
+    #1f2a44 0%,
+    #0b1220 55%,
+    #070b14 100%
+  );
+
+  color: #e5e7eb;
+}
+
+/* Dark mode section backgrounds */
+.App.dark .acceuil,
+.App.dark .about,
+.App.dark .skills,
+.App.dark .projects,
+.App.dark .contact {
+  background-color: #0b1220;
+  color: #e5e7eb;
+}
+
+/* Dark mode cards */
+.App.dark .about-content,
+.App.dark .skill-category,
+.App.dark .contact-links,
+.App.dark .cv-download,
+.App.dark .project {
+  background: #111a2e;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  color: #e5e7eb;
+}
+
+/* Dark mode headings */
+.App.dark h2 {
+  color: #f3f4f6;
+}
+
+.App.dark h3 {
+  color: #93c5fd;
+}
+
+/* Dark mode links */
+.App.dark .project-link,
+.App.dark a {
+  color: #93c5fd;
+}
+
+/* Dark mode link hover */
+.App.dark .project-link:hover,
+.App.dark a:hover {
+  color: #bfdbfe;
+}
